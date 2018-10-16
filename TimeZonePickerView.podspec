@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "TimeZonePickerView"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "TimeZonePickerView makes it ease to present a picker view containing time zones from any where in the application."
 
   # This description is used to generate tags and improve search results.
@@ -25,10 +25,10 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-  "Presents a UIPickerView containing all the time zones with ability to select one."
+  "Presents a UIPickerView containing all the time zones with ability to select one. Easy way to deal with time zones. Pop it > Choose it > Use it 😉"
                    DESC
 
-  s.homepage     = "https://cocoapods.org/pods/TimeZonePickerView"
+  s.homepage     = "https://github.com/CosmicYogi/TimeZonePickerView"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
   #
 
   s.license      = "MIT"
-  # s.license      = { :type => "MIT", :file => "LICENSE" }
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -135,4 +135,5 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
 
+  s.swift_version = "4.1"
 end
