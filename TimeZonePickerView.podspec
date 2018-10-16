@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "TimeZonePickerView"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "TimeZonePickerView makes it ease to present a picker view containing time zones from any where in the application."
 
   # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   "Presents a UIPickerView containing all the time zones with ability to select one."
                    DESC
 
-  s.homepage     = "https://github.com/CosmicYogi/TimeZonePickerView"
+  s.homepage     = "https://cocoapods.org/pods/TimeZonePickerView"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
