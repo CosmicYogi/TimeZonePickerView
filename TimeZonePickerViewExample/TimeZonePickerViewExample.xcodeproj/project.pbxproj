@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		94FABABA2175F8580020C282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FABAB92175F8580020C282 /* AppDelegate.swift */; };
+		94FABABC2175F8580020C282 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FABABB2175F8580020C282 /* ViewController.swift */; };
+		94FABABF2175F8580020C282 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94FABABD2175F8580020C282 /* Main.storyboard */; };
+		94FABAC12175F85D0020C282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94FABAC02175F85D0020C282 /* Assets.xcassets */; };
+		94FABAC42175F85D0020C282 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94FABAC22175F85D0020C282 /* LaunchScreen.storyboard */; };
+		94FABACF2175F85D0020C282 /* TimeZonePickerViewExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FABACE2175F85D0020C282 /* TimeZonePickerViewExampleTests.swift */; };
+		94FABADA2175F85D0020C282 /* TimeZonePickerViewExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FABAD92175F85D0020C282 /* TimeZonePickerViewExampleUITests.swift */; };
+		94FABAFA2175FA940020C282 /* TimeZonePickerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94FABAF92175FA940020C282 /* TimeZonePickerView.framework */; };
+		94FABAFB2175FA940020C282 /* TimeZonePickerView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94FABAF92175FA940020C282 /* TimeZonePickerView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94FABACB2175F85D0020C282 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94FABAAE2175F8580020C282 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94FABAB52175F8580020C282;
+			remoteInfo = TimeZonePickerViewExample;
+		};
+		94FABAD62175F85D0020C282 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94FABAAE2175F8580020C282 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94FABAB52175F8580020C282;
+			remoteInfo = TimeZonePickerViewExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		94FABAFC2175FA940020C282 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				94FABAFB2175FA940020C282 /* TimeZonePickerView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		94FABAB62175F8580020C282 /* TimeZonePickerViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeZonePickerViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94FABAB92175F8580020C282 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		94FABABB2175F8580020C282 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94FABABE2175F8580020C282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		94FABAC02175F85D0020C282 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94FABAC32175F85D0020C282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		94FABAC52175F85D0020C282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94FABACA2175F85D0020C282 /* TimeZonePickerViewExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeZonePickerViewExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94FABACE2175F85D0020C282 /* TimeZonePickerViewExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZonePickerViewExampleTests.swift; sourceTree = "<group>"; };
+		94FABAD02175F85D0020C282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94FABAD52175F85D0020C282 /* TimeZonePickerViewExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeZonePickerViewExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94FABAD92175F85D0020C282 /* TimeZonePickerViewExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZonePickerViewExampleUITests.swift; sourceTree = "<group>"; };
+		94FABADB2175F85D0020C282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94FABAF92175FA940020C282 /* TimeZonePickerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TimeZonePickerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94FABAB32175F8580020C282 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94FABAFA2175FA940020C282 /* TimeZonePickerView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94FABAC72175F85D0020C282 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94FABAD22175F85D0020C282 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		94FABAAD2175F8580020C282 = {
+			isa = PBXGroup;
+			children = (
+				94FABAF92175FA940020C282 /* TimeZonePickerView.framework */,
+				94FABAB82175F8580020C282 /* TimeZonePickerViewExample */,
+				94FABACD2175F85D0020C282 /* TimeZonePickerViewExampleTests */,
+				94FABAD82175F85D0020C282 /* TimeZonePickerViewExampleUITests */,
+				94FABAB72175F8580020C282 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		94FABAB72175F8580020C282 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94FABAB62175F8580020C282 /* TimeZonePickerViewExample.app */,
+				94FABACA2175F85D0020C282 /* TimeZonePickerViewExampleTests.xctest */,
+				94FABAD52175F85D0020C282 /* TimeZonePickerViewExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94FABAB82175F8580020C282 /* TimeZonePickerViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				94FABAB92175F8580020C282 /* AppDelegate.swift */,
+				94FABABB2175F8580020C282 /* ViewController.swift */,
+				94FABABD2175F8580020C282 /* Main.storyboard */,
+				94FABAC02175F85D0020C282 /* Assets.xcassets */,
+				94FABAC22175F85D0020C282 /* LaunchScreen.storyboard */,
+				94FABAC52175F85D0020C282 /* Info.plist */,
+			);
+			path = TimeZonePickerViewExample;
+			sourceTree = "<group>";
+		};
+		94FABACD2175F85D0020C282 /* TimeZonePickerViewExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				94FABACE2175F85D0020C282 /* TimeZonePickerViewExampleTests.swift */,
+				94FABAD02175F85D0020C282 /* Info.plist */,
+			);
+			path = TimeZonePickerViewExampleTests;
+			sourceTree = "<group>";
+		};
+		94FABAD82175F85D0020C282 /* TimeZonePickerViewExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				94FABAD92175F85D0020C282 /* TimeZonePickerViewExampleUITests.swift */,
+				94FABADB2175F85D0020C282 /* Info.plist */,
+			);
+			path = TimeZonePickerViewExampleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94FABAB52175F8580020C282 /* TimeZonePickerViewExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94FABADE2175F85D0020C282 /* Build configuration list for PBXNativeTarget "TimeZonePickerViewExample" */;
+			buildPhases = (
+				94FABAB22175F8580020C282 /* Sources */,
+				94FABAB32175F8580020C282 /* Frameworks */,
+				94FABAB42175F8580020C282 /* Resources */,
+				94FABAFC2175FA940020C282 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeZonePickerViewExample;
+			productName = TimeZonePickerViewExample;
+			productReference = 94FABAB62175F8580020C282 /* TimeZonePickerViewExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		94FABAC92175F85D0020C282 /* TimeZonePickerViewExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94FABAE12175F85D0020C282 /* Build configuration list for PBXNativeTarget "TimeZonePickerViewExampleTests" */;
+			buildPhases = (
+				94FABAC62175F85D0020C282 /* Sources */,
+				94FABAC72175F85D0020C282 /* Frameworks */,
+				94FABAC82175F85D0020C282 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94FABACC2175F85D0020C282 /* PBXTargetDependency */,
+			);
+			name = TimeZonePickerViewExampleTests;
+			productName = TimeZonePickerViewExampleTests;
+			productReference = 94FABACA2175F85D0020C282 /* TimeZonePickerViewExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		94FABAD42175F85D0020C282 /* TimeZonePickerViewExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94FABAE42175F85D0020C282 /* Build configuration list for PBXNativeTarget "TimeZonePickerViewExampleUITests" */;
+			buildPhases = (
+				94FABAD12175F85D0020C282 /* Sources */,
+				94FABAD22175F85D0020C282 /* Frameworks */,
+				94FABAD32175F85D0020C282 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94FABAD72175F85D0020C282 /* PBXTargetDependency */,
+			);
+			name = TimeZonePickerViewExampleUITests;
+			productName = TimeZonePickerViewExampleUITests;
+			productReference = 94FABAD52175F85D0020C282 /* TimeZonePickerViewExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94FABAAE2175F8580020C282 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Mitesh Soni";
+				TargetAttributes = {
+					94FABAB52175F8580020C282 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					94FABAC92175F85D0020C282 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 94FABAB52175F8580020C282;
+					};
+					94FABAD42175F85D0020C282 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 94FABAB52175F8580020C282;
+					};
+				};
+			};
+			buildConfigurationList = 94FABAB12175F8580020C282 /* Build configuration list for PBXProject "TimeZonePickerViewExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 94FABAAD2175F8580020C282;
+			productRefGroup = 94FABAB72175F8580020C282 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94FABAB52175F8580020C282 /* TimeZonePickerViewExample */,
+				94FABAC92175F85D0020C282 /* TimeZonePickerViewExampleTests */,
+				94FABAD42175F85D0020C282 /* TimeZonePickerViewExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94FABAB42175F8580020C282 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94FABAC42175F85D0020C282 /* LaunchScreen.storyboard in Resources */,
+				94FABAC12175F85D0020C282 /* Assets.xcassets in Resources */,
+				94FABABF2175F8580020C282 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94FABAC82175F85D0020C282 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94FABAD32175F85D0020C282 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94FABAB22175F8580020C282 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94FABABC2175F8580020C282 /* ViewController.swift in Sources */,
+				94FABABA2175F8580020C282 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94FABAC62175F85D0020C282 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94FABACF2175F85D0020C282 /* TimeZonePickerViewExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94FABAD12175F85D0020C282 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94FABADA2175F85D0020C282 /* TimeZonePickerViewExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94FABACC2175F85D0020C282 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94FABAB52175F8580020C282 /* TimeZonePickerViewExample */;
+			targetProxy = 94FABACB2175F85D0020C282 /* PBXContainerItemProxy */;
+		};
+		94FABAD72175F85D0020C282 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94FABAB52175F8580020C282 /* TimeZonePickerViewExample */;
+			targetProxy = 94FABAD62175F85D0020C282 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		94FABABD2175F8580020C282 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94FABABE2175F8580020C282 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		94FABAC22175F85D0020C282 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94FABAC32175F85D0020C282 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94FABADC2175F85D0020C282 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		94FABADD2175F85D0020C282 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94FABADF2175F85D0020C282 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TimeZonePickerViewExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.miteshsoni.TimeZonePickerViewExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94FABAE02175F85D0020C282 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TimeZonePickerViewExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.miteshsoni.TimeZonePickerViewExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		94FABAE22175F85D0020C282 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TimeZonePickerViewExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.miteshsoni.TimeZonePickerViewExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeZonePickerViewExample.app/TimeZonePickerViewExample";
+			};
+			name = Debug;
+		};
+		94FABAE32175F85D0020C282 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TimeZonePickerViewExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.miteshsoni.TimeZonePickerViewExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeZonePickerViewExample.app/TimeZonePickerViewExample";
+			};
+			name = Release;
+		};
+		94FABAE52175F85D0020C282 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TimeZonePickerViewExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.miteshsoni.TimeZonePickerViewExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TimeZonePickerViewExample;
+			};
+			name = Debug;
+		};
+		94FABAE62175F85D0020C282 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TimeZonePickerViewExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.miteshsoni.TimeZonePickerViewExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TimeZonePickerViewExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94FABAB12175F8580020C282 /* Build configuration list for PBXProject "TimeZonePickerViewExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94FABADC2175F85D0020C282 /* Debug */,
+				94FABADD2175F85D0020C282 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94FABADE2175F85D0020C282 /* Build configuration list for PBXNativeTarget "TimeZonePickerViewExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94FABADF2175F85D0020C282 /* Debug */,
+				94FABAE02175F85D0020C282 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94FABAE12175F85D0020C282 /* Build configuration list for PBXNativeTarget "TimeZonePickerViewExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94FABAE22175F85D0020C282 /* Debug */,
+				94FABAE32175F85D0020C282 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94FABAE42175F85D0020C282 /* Build configuration list for PBXNativeTarget "TimeZonePickerViewExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94FABAE52175F85D0020C282 /* Debug */,
+				94FABAE62175F85D0020C282 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94FABAAE2175F8580020C282 /* Project object */;
+}
