@@ -15,10 +15,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let temp = Temp()
-        temp.a()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: "Select Timezone", target: self, action: changeTimeZone)
     }
 
+    @objc func changeTimeZone(){
+        
+    }
 
 }
 
