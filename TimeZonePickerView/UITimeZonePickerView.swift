@@ -7,18 +7,15 @@
 //
 import UIKit
 
-protocol TimeZoneSelectorProtocol {
-    func timeZoneChanged(abbrevation: String)
-}
-@IBDesignable class TimeZoneView: UIView {
+@IBDesignable public class UITimeZonePickerView: UIView {
     
     let pickerView = UIPickerView()
     let zones = TimeZoneManager.shared.timeZones
     
     var currentContinent = "Africa"
-    var delegate: TimeZoneSelectorProtocol?
+    public var delegate: UITimeZonePickerViewDelegate?
     
-    override var isHidden: Bool{
+    override public var isHidden: Bool{
         get {
             return pickerView.isHidden
         } set {
@@ -26,7 +23,7 @@ protocol TimeZoneSelectorProtocol {
         }
     }
     
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         createPickerView()
     }
     
@@ -52,7 +49,7 @@ protocol TimeZoneSelectorProtocol {
         self.pickerView.isHidden = false
     }
     
-    func addAsSubviewTo(superView: UIView){
+    public func addAsSubviewTo(superView: UIView){
         superView.addSubview(self)
         self.translatesAutoresizingMaskIntoConstraints = false
         
@@ -67,12 +64,12 @@ protocol TimeZoneSelectorProtocol {
 }
 
 
-extension TimeZoneView: UIPickerViewDelegate, UIPickerViewDataSource{
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+extension UITimeZonePickerView: UIPickerViewDelegate, UIPickerViewDataSource{
+    public func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 2
     }
     
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if component == 0{
             return zones.count
         }
@@ -84,7 +81,7 @@ extension TimeZoneView: UIPickerViewDelegate, UIPickerViewDataSource{
         return 0
     }
     
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    private func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
         if component == 0{
             let continent = TimeZoneManager.shared.continents[row]
@@ -98,8 +95,11 @@ extension TimeZoneView: UIPickerViewDelegate, UIPickerViewDataSource{
         }
         return "?"
     }
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-
+    private func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
+        var _continent = ""
+        var _zone = ""
+        
         if component == 0{
             currentContinent = TimeZoneManager.shared.continents[row]
             _continent = currentContinent

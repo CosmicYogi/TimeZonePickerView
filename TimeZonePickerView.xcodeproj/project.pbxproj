@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		949109E82176D700005BE511 /* TimeZoneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949109E22176D700005BE511 /* TimeZoneManager.swift */; };
-		949109E92176D700005BE511 /* TimeZoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949109E62176D700005BE511 /* TimeZoneView.swift */; };
+		949109E92176D700005BE511 /* UITimeZonePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949109E62176D700005BE511 /* UITimeZonePickerView.swift */; };
+		949109EC2176DA43005BE511 /* UITimeZonePickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949109EB2176DA43005BE511 /* UITimeZonePickerViewDelegate.swift */; };
 		94FABA9D2175F8190020C282 /* TimeZonePickerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94FABA932175F8190020C282 /* TimeZonePickerView.framework */; };
 		94FABAA22175F8190020C282 /* TimeZonePickerViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FABAA12175F8190020C282 /* TimeZonePickerViewTests.swift */; };
 		94FABAA42175F8190020C282 /* TimeZonePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 94FABA962175F8190020C282 /* TimeZonePickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -47,7 +48,8 @@
 
 /* Begin PBXFileReference section */
 		949109E22176D700005BE511 /* TimeZoneManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeZoneManager.swift; sourceTree = "<group>"; };
-		949109E62176D700005BE511 /* TimeZoneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeZoneView.swift; sourceTree = "<group>"; };
+		949109E62176D700005BE511 /* UITimeZonePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITimeZonePickerView.swift; sourceTree = "<group>"; };
+		949109EB2176DA43005BE511 /* UITimeZonePickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITimeZonePickerViewDelegate.swift; sourceTree = "<group>"; };
 		94FABA932175F8190020C282 /* TimeZonePickerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TimeZonePickerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94FABA962175F8190020C282 /* TimeZonePickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeZonePickerView.h; sourceTree = "<group>"; };
 		94FABA972175F8190020C282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,7 +102,8 @@
 			children = (
 				94FABA962175F8190020C282 /* TimeZonePickerView.h */,
 				949109E22176D700005BE511 /* TimeZoneManager.swift */,
-				949109E62176D700005BE511 /* TimeZoneView.swift */,
+				949109E62176D700005BE511 /* UITimeZonePickerView.swift */,
+				949109EB2176DA43005BE511 /* UITimeZonePickerViewDelegate.swift */,
 				94FABA972175F8190020C282 /* Info.plist */,
 			);
 			path = TimeZonePickerView;
@@ -265,7 +268,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				949109E82176D700005BE511 /* TimeZoneManager.swift in Sources */,
-				949109E92176D700005BE511 /* TimeZoneView.swift in Sources */,
+				949109E92176D700005BE511 /* UITimeZonePickerView.swift in Sources */,
+				949109EC2176DA43005BE511 /* UITimeZonePickerViewDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
