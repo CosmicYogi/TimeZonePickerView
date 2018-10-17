@@ -81,7 +81,7 @@ extension UITimeZonePickerView: UIPickerViewDelegate, UIPickerViewDataSource{
         return 0
     }
     
-    private func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    public func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
         if component == 0{
             let continent = TimeZoneManager.shared.continents[row]
@@ -95,7 +95,7 @@ extension UITimeZonePickerView: UIPickerViewDelegate, UIPickerViewDataSource{
         }
         return "?"
     }
-    private func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    public func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
         var _continent = ""
         var _zone = ""
