@@ -97,16 +97,16 @@ extension UITimeZonePickerView: UIPickerViewDelegate, UIPickerViewDataSource{
     }
     public func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
-        var _continent = ""
-        var _zone = ""
+//        var _continent = ""
+//        var _zone = ""
         
         if component == 0{
             currentContinent = TimeZoneManager.shared.continents[row]
-            _continent = currentContinent
+//            _continent = currentContinent
             pickerView.reloadComponent(1)
             let selectedRow = pickerView.selectedRow(inComponent: 1)
             if let zone = zones[currentContinent]?[selectedRow]{
-                _zone = zone
+//                _zone = zone
                 let timeZoneAbbrebiation = currentContinent + "/" + zone
                 //                print("Time zone abbrivation is")
                 //                print(timeZoneAbbrebiation)
@@ -116,7 +116,7 @@ extension UITimeZonePickerView: UIPickerViewDelegate, UIPickerViewDataSource{
         if component == 1{
             
             if let zone = zones[currentContinent]?[row]{
-                _zone = zone
+//                _zone = zone
                 let timeZoneAbbrebiation = currentContinent + "/" + zone
                 //                print("Time zone abbrivation is")
                 //                print(timeZoneAbbrebiation)
