@@ -11,6 +11,14 @@ import TimeZonePickerView
 
 class ViewController: UIViewController {
 
+    // MARK:- IBOutlets
+    
+    @IBOutlet weak var timeZoneLabel: UILabel!
+    @IBOutlet weak var timeZoneAbbrebationLabel: UILabel!
+    
+    
+    // MARK:- Variables and constants
+    
     let timeZonePickerView = UITimeZonePickerView()
     var pickerHidden = true
     var selectedTimeZone = ""
@@ -45,6 +53,9 @@ extension ViewController: UITimeZonePickerViewDelegate{
     func timeZoneChanged(abbrevation: String) {
         print("Timezone is", abbrevation)
         selectedTimeZone = abbrevation
+        timeZoneLabel.text = abbrevation
+        let timeZone = TimeZone(identifier: abbrevation)
+        timeZoneAbbrebationLabel.text = timeZone?.abbreviation()
     }
     
     

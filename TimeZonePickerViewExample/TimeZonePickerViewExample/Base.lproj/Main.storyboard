@@ -16,10 +16,34 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Zone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0s-zd-CQS">
+                                <rect key="frame" x="146.5" y="323" width="82" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SA5-Sp-4wd">
+                                <rect key="frame" x="166.5" y="352" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="B0s-zd-CQS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Eny-dd-tm9"/>
+                            <constraint firstItem="B0s-zd-CQS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Tm0-zo-1HP"/>
+                            <constraint firstItem="SA5-Sp-4wd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kcz-zn-nJb"/>
+                            <constraint firstItem="SA5-Sp-4wd" firstAttribute="top" secondItem="B0s-zd-CQS" secondAttribute="bottom" constant="8" id="zux-dp-8v4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="ROO-Uu-RFM"/>
+                    <connections>
+                        <outlet property="timeZoneAbbrebationLabel" destination="SA5-Sp-4wd" id="v07-ci-lLY"/>
+                        <outlet property="timeZoneLabel" destination="B0s-zd-CQS" id="fec-rQ-Pn3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
