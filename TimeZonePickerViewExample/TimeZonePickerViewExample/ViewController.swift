@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     
     let timeZonePickerView = UITimeZonePickerView()
     var pickerHidden = true
-    var selectedTimeZone = ""
+    var selectedTimeZone = TimeZone.current
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +41,8 @@ class ViewController: UIViewController {
             return
         }
 
-        navigationItem.rightBarButtonItem?.title = selectedTimeZone
+        
+        navigationItem.rightBarButtonItem?.title = selectedTimeZone.identifier
         
         timeZonePickerView.isHidden = true
         pickerHidden = true
@@ -50,12 +51,15 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UITimeZonePickerViewDelegate{
+    func timeZonePickerView(_ pickerView: UIPickerView, didSelectTimeZone timeZone: TimeZone) {
+        print("Timezone is", timeZone.identifier)
+        self.selectedTimeZone = timeZone
+        timeZoneLabel.text = timeZone.identifier
+        timeZoneAbbrebationLabel.text = timeZone.abbreviation()
+    }
+    
     func timeZoneChanged(abbrevation: String) {
-        print("Timezone is", abbrevation)
-        selectedTimeZone = abbrevation
-        timeZoneLabel.text = abbrevation
-        let timeZone = TimeZone(identifier: abbrevation)
-        timeZoneAbbrebationLabel.text = timeZone?.abbreviation()
+        
     }
     
     

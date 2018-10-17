@@ -110,7 +110,11 @@ extension UITimeZonePickerView: UIPickerViewDelegate, UIPickerViewDataSource{
                 let timeZoneAbbrebiation = currentContinent + "/" + zone
                 //                print("Time zone abbrivation is")
                 //                print(timeZoneAbbrebiation)
-                delegate?.timeZoneChanged(abbrevation: timeZoneAbbrebiation)
+//                delegate?.timeZoneChanged(abbrevation: timeZoneAbbrebiation)
+                let timeZone = TimeZone(identifier: timeZoneAbbrebiation)
+                if let timeZone = timeZone{
+                    delegate?.timeZonePickerView(pickerView, didSelectTimeZone: timeZone)
+                }
             }
         }
         if component == 1{
@@ -120,7 +124,12 @@ extension UITimeZonePickerView: UIPickerViewDelegate, UIPickerViewDataSource{
                 let timeZoneAbbrebiation = currentContinent + "/" + zone
                 //                print("Time zone abbrivation is")
                 //                print(timeZoneAbbrebiation)
-                delegate?.timeZoneChanged(abbrevation: timeZoneAbbrebiation)
+//                delegate?.timeZoneChanged(abbrevation: timeZoneAbbrebiation)
+                let timeZone = TimeZone(identifier: timeZoneAbbrebiation)
+                if let timeZone = timeZone{
+                    delegate?.timeZonePickerView(pickerView, didSelectTimeZone: timeZone)
+                }
+                
             }
         }
         

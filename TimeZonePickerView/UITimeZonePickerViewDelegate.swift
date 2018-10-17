@@ -7,5 +7,9 @@
 //
 
 public protocol UITimeZonePickerViewDelegate {
-    func timeZoneChanged(abbrevation: String)
+    func timeZonePickerView(_ pickerView: UIPickerView, didSelectTimeZone timeZone: TimeZone)
+    
+}
+public protocol TimeZonePickerDelegate: class {
+    func timeZonePicker(_ timeZonePicker: UITimeZonePickerView, didSelectTimeZone timeZone: TimeZone)
 }
