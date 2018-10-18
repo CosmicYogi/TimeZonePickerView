@@ -15,11 +15,11 @@ public class UITimeZonePickerViewController: UIViewController {
     
     var timeZoneIdentifiers = TimeZone.knownTimeZoneIdentifiers
     
+    public var delegate: TimeZonePickerViewControllerDelegate?
+    
     override public func viewDidLoad() {
         super.viewDidLoad()
-
         self.view.backgroundColor = .white
-
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "X", style: .plain, target: self, action: #selector(onLeftBarButtonDown))
         searchResultsTVC = SearchResultsTVC()
@@ -44,11 +44,25 @@ public class UITimeZonePickerViewController: UIViewController {
         searchController.obscuresBackgroundDuringPresentation = true
         navigationItem.searchController = searchController
         definesPresentationContext = true
-        
+        searchResultsTVC?.delegate = self
     }
     
     override public func viewDidDisappear(_ animated: Bool) {
         searchController.isActive = false
     }
 
+}
+
+extension UITimeZonePickerViewController: SearchConnectionDelegate{
+    func selectedTimeZone(timeZone: TimeZone?) {
+        print("selected time zone in search vc is", timeZone)
+        
+        if let timeZone = timeZone{
+            // do operation call another delegate
+        } else {
+            navigationController?.popViewController(animated: true)
+        }
+    }
+    
+    
 }

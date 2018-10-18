@@ -37,6 +37,7 @@ class ViewController: UIViewController {
     
     @objc func presentTimeZonePicker(){
         let vc = UITimeZonePickerViewController()
+        vc.delegate = self
         navigationController?.pushViewController(vc, animated: true)
 //        present(vc, animated: true, completion: nil)
     }
@@ -73,3 +74,10 @@ extension ViewController: UITimeZonePickerViewDelegate{
     
 }
 
+extension ViewController: TimeZonePickerViewControllerDelegate{
+    func timeZonePicker(_ timeZonePicker: UITimeZonePickerView, didSelectTimeZone timeZone: TimeZone) {
+        print("Timezone selected is", timeZone.identifier)
+    }
+    
+    
+}

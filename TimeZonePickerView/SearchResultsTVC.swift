@@ -8,12 +8,17 @@
 
 import UIKit
 
+protocol SearchConnectionDelegate {
+    func selectedTimeZone(timeZone: TimeZone?)
+}
+
 class SearchResultsTVC: UITableViewController {
 
     // MARK:- Variables
     let timeZones = TimeZone.knownTimeZoneIdentifiers
     var filteredTimeZones = TimeZone.knownTimeZoneIdentifiers
     var searchText = ""
+    var delegate: SearchConnectionDelegate?
     
     
     // MARK:- View appearence and loading
@@ -79,6 +84,7 @@ extension SearchResultsTVC: UISearchResultsUpdating, UISearchBarDelegate{
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         filteredTimeZones = TimeZone.knownTimeZoneIdentifiers
         tableView.reloadData()
+        delegate?.selectedTimeZone(timeZone: nil)
     }
     
     func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
