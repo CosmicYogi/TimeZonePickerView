@@ -21,8 +21,6 @@ class SearchResultsTVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(TimeZoneTableViewCell.self, forCellReuseIdentifier: "TimeZoneCell")
-//        self.view.isHidden = false
-//        tableView.reloadData()
         
     }
 
@@ -72,7 +70,7 @@ extension SearchResultsTVC: UISearchResultsUpdating, UISearchBarDelegate{
         if searchText == ""{
             filteredTimeZones = timeZones
         } else{
-            filteredTimeZones = timeZones.filter{$0.contains(searchText)}
+            filteredTimeZones = timeZones.filter{$0.lowercased().contains(searchText.lowercased())}
         }
         
         tableView.reloadData()
