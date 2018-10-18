@@ -47,9 +47,9 @@ class SearchResultsTVC: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("search result tapped", filteredTimeZones[indexPath.row])
-
-        self.dismiss(animated: true, completion: nil)
+        if let timeZone = TimeZone(identifier: filteredTimeZones[indexPath.row]){
+            delegate?.selectedTimeZone(timeZone: timeZone)
+        }
         
     }
     
