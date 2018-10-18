@@ -31,6 +31,14 @@ class ViewController: UIViewController {
         timeZonePickerView.delegate = self
         timeZonePickerView.isHidden = pickerHidden
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Select TimeZone", style: .plain, target: self, action: #selector(changeTimeZone))
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Select TimeZone", style: .plain, target: self, action: #selector(presentTimeZonePicker))
+    }
+    
+    @objc func presentTimeZonePicker(){
+        let vc = UITimeZonePickerViewController()
+        navigationController?.pushViewController(vc, animated: true)
+//        present(vc, animated: true, completion: nil)
     }
 
     @objc func changeTimeZone(){

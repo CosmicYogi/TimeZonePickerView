@@ -12,6 +12,8 @@
 		949109EC2176DA43005BE511 /* UITimeZonePickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949109EB2176DA43005BE511 /* UITimeZonePickerViewDelegate.swift */; };
 		949109F821772A90005BE511 /* UITimeZonePickerViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949109F421772A90005BE511 /* UITimeZonePickerViewControllerDelegate.swift */; };
 		949109FA21772AE0005BE511 /* UITimeZonePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949109F921772AE0005BE511 /* UITimeZonePickerViewController.swift */; };
+		949109FC217797A0005BE511 /* SearchResultsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949109FB2177979F005BE511 /* SearchResultsTVC.swift */; };
+		949109FE2177996A005BE511 /* TimeZoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949109FD2177996A005BE511 /* TimeZoneTableViewCell.swift */; };
 		94FABA9D2175F8190020C282 /* TimeZonePickerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94FABA932175F8190020C282 /* TimeZonePickerView.framework */; };
 		94FABAA22175F8190020C282 /* TimeZonePickerViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FABAA12175F8190020C282 /* TimeZonePickerViewTests.swift */; };
 		94FABAA42175F8190020C282 /* TimeZonePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 94FABA962175F8190020C282 /* TimeZonePickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -54,6 +56,8 @@
 		949109EB2176DA43005BE511 /* UITimeZonePickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITimeZonePickerViewDelegate.swift; sourceTree = "<group>"; };
 		949109F421772A90005BE511 /* UITimeZonePickerViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITimeZonePickerViewControllerDelegate.swift; sourceTree = "<group>"; };
 		949109F921772AE0005BE511 /* UITimeZonePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITimeZonePickerViewController.swift; sourceTree = "<group>"; };
+		949109FB2177979F005BE511 /* SearchResultsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsTVC.swift; sourceTree = "<group>"; };
+		949109FD2177996A005BE511 /* TimeZoneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneTableViewCell.swift; sourceTree = "<group>"; };
 		94FABA932175F8190020C282 /* TimeZonePickerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TimeZonePickerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94FABA962175F8190020C282 /* TimeZonePickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeZonePickerView.h; sourceTree = "<group>"; };
 		94FABA972175F8190020C282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 				949109EB2176DA43005BE511 /* UITimeZonePickerViewDelegate.swift */,
 				949109F421772A90005BE511 /* UITimeZonePickerViewControllerDelegate.swift */,
 				949109F921772AE0005BE511 /* UITimeZonePickerViewController.swift */,
+				949109FB2177979F005BE511 /* SearchResultsTVC.swift */,
+				949109FD2177996A005BE511 /* TimeZoneTableViewCell.swift */,
 				94FABA972175F8190020C282 /* Info.plist */,
 			);
 			path = TimeZonePickerView;
@@ -275,6 +281,8 @@
 			files = (
 				949109F821772A90005BE511 /* UITimeZonePickerViewControllerDelegate.swift in Sources */,
 				949109E82176D700005BE511 /* TimeZoneManager.swift in Sources */,
+				949109FE2177996A005BE511 /* TimeZoneTableViewCell.swift in Sources */,
+				949109FC217797A0005BE511 /* SearchResultsTVC.swift in Sources */,
 				949109E92176D700005BE511 /* UITimeZonePickerView.swift in Sources */,
 				949109FA21772AE0005BE511 /* UITimeZonePickerViewController.swift in Sources */,
 				949109EC2176DA43005BE511 /* UITimeZonePickerViewDelegate.swift in Sources */,
