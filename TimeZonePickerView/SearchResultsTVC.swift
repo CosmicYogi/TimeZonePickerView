@@ -77,12 +77,12 @@ extension SearchResultsTVC: UISearchResultsUpdating, UISearchBarDelegate{
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        filteredTimeZones.removeAll()
+        filteredTimeZones = TimeZone.knownTimeZoneIdentifiers
         tableView.reloadData()
     }
     
     func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
-
+        filteredTimeZones = TimeZone.knownTimeZoneIdentifiers
         tableView.reloadData()
         return true
     }

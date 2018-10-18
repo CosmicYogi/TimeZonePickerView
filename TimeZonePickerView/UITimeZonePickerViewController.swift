@@ -27,7 +27,10 @@ public class UITimeZonePickerViewController: UIViewController {
         createSearchBar()
     }
     
-
+    
+    public override func viewDidAppear(_ animated: Bool) {
+        self.searchController.isActive = true
+    }
     @objc func onLeftBarButtonDown(){
         dismiss(animated: true, completion: nil)
     }
@@ -41,6 +44,7 @@ public class UITimeZonePickerViewController: UIViewController {
         searchController.obscuresBackgroundDuringPresentation = true
         navigationItem.searchController = searchController
         definesPresentationContext = true
+        
     }
     
     override public func viewDidDisappear(_ animated: Bool) {
