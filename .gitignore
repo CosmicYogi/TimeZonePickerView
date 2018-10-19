@@ -17,6 +17,9 @@ DerivedData/
 !default.perspectivev3
 xcuserdata/
 
+
+## xcworkspace
+TimeZonePickerView.xcworkspace/xcuserdata/miteshsoni.xcuserdatad/UserInterfaceState.xcuserstate
 ## Other
 *.moved-aside
 *.xcuserstate
