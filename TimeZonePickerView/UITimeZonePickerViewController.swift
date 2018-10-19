@@ -58,7 +58,7 @@ extension UITimeZonePickerViewController: SearchConnectionDelegate{
         print("selected time zone in search vc is", timeZone)
         
         if let timeZone = timeZone{
-            delegate?.timeZonePicker(self, didSelectTimeZone: timeZone)
+            delegate?.timeZonePickerView(self, didSelectTimeZone: timeZone)
             navigationController?.popViewController(animated: true)
         } else {
             navigationController?.popViewController(animated: true)

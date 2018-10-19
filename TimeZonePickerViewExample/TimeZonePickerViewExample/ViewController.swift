@@ -75,8 +75,11 @@ extension ViewController: UITimeZonePickerViewDelegate{
 }
 
 extension ViewController: TimeZonePickerViewControllerDelegate{
-    func timeZonePicker(_ timeZonePicker: UITimeZonePickerViewController, didSelectTimeZone timeZone: TimeZone) {
+    func timeZonePickerView(_ timeZonePickerViewController: UITimeZonePickerViewController, didSelectTimeZone timeZone: TimeZone) {
         print("Timezone selected is", timeZone.identifier)
+        self.selectedTimeZone = timeZone
+        timeZoneLabel.text = timeZone.identifier
+        timeZoneAbbrebationLabel.text = timeZone.abbreviation()
     }
     
     
