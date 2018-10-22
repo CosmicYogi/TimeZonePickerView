@@ -19,15 +19,49 @@ public class UITimeZonePickerViewController: UIViewController {
     
     override public func viewDidLoad() {
         super.viewDidLoad()
+        showButtonsOnTop()
         self.view.backgroundColor = .white
-        
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "X", style: .plain, target: self, action: #selector(onLeftBarButtonDown))
         searchResultsTVC = SearchResultsTVC()
 //        navigationItem.hidesSearchBarWhenScrolling = true
         createSearchBar()
     }
     
+    func showButtonsOnTop(){
+        print("laali")
+//        let bar = UIView(frame: .zero)
+//        view.addSubview(bar)
+//        bar.translatesAutoresizingMaskIntoConstraints = false
+//        bar.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
+//        bar.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
+//        bar.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0).isActive = true
+//        bar.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive = true
+//
+//        let cancelButton = UIButton(frame: .zero)
+//        cancelButton.titleLabel?.text = "X"
+        let navBar: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: 320, height: 44))
+        self.view.addSubview(navBar);
+        
+        let navItem = UINavigationItem(title: "SomeTitle");
+        let doneItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: nil, action: #selector(selectorName));
+        navItem.rightBarButtonItem = doneItem;
+        
+        navBar.setItems([navItem], animated: false);
+        
+        navBar.translatesAutoresizingMaskIntoConstraints = false
+        
+ 
+//                navBar.topAnchor.constraint(equalTo: self.topla, constant: 0).isActive = true
+        navBar.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
+//                navBar.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
+                navBar.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0).isActive = true
+                navBar.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive = true
+//        NSLayoutConstraint(item: navBar, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 70).isActive = true
+    }
     
+    @objc func selectorName(){
+        print("selector down")
+    }
     public override func viewDidAppear(_ animated: Bool) {
         self.searchController.isActive = true
     }
