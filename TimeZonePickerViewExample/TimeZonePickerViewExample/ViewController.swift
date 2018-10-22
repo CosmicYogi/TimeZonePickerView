@@ -70,12 +70,6 @@ extension ViewController: UITimeZonePickerViewDelegate{
         timeZoneLabel.text = timeZone.identifier
         timeZoneAbbrebationLabel.text = timeZone.abbreviation()
     }
-    
-    func timeZoneChanged(abbrevation: String) {
-        
-    }
-    
-    
 }
 
 extension ViewController: TimeZonePickerViewControllerDelegate{
