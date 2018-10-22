@@ -11,6 +11,8 @@ import UIKit
     
     let pickerView = UIPickerView()
     let zones = TimeZoneManager.shared.timeZones
+    var baseColor: UIColor? = nil
+    var baseFont: UIFont? = nil
     
     var currentContinent = "Africa"
     public var delegate: UITimeZonePickerViewDelegate?
@@ -61,6 +63,15 @@ import UIKit
         createPickerView()
     }
     
+    public func setText(font: UIFont) {
+        baseFont = font
+        pickerView.reloadAllComponents()
+    }
+    
+    public func setText(color: UIColor){
+        baseColor = color
+        pickerView.reloadAllComponents()
+    }
 }
 
 
@@ -81,19 +92,44 @@ extension UITimeZonePickerView: UIPickerViewDelegate, UIPickerViewDataSource{
         return 0
     }
     
-    public func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+//    public func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+//
+//        if component == 0{
+//            let continent = TimeZoneManager.shared.continents[row]
+//            //            currentContinent = continent
+//            //            let timeZones = timeZonesList[continent]
+//            return continent
+//        }
+//        else if component == 1{
+//            let timeZones = zones[currentContinent]
+//            return timeZones?[row ] ?? "n/a"
+//        }
+//        return "?"
+//    }
+    
+    public func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
         
+        
+        var label = UILabel()
+        if let v = view {
+            label = v as! UILabel
+        }
+        label.font = baseFont
+        label.textColor = baseColor
         if component == 0{
             let continent = TimeZoneManager.shared.continents[row]
-            //            currentContinent = continent
-            //            let timeZones = timeZonesList[continent]
-            return continent
+            label.text =  continent
         }
         else if component == 1{
             let timeZones = zones[currentContinent]
-            return timeZones?[row ] ?? "n/a"
+            if let timeZone = timeZones?[row] {
+                let _timeZone = timeZone.replacingOccurrences(of: "_", with: " ")
+                label.text = _timeZone
+            }
+            
         }
-        return "?"
+        label.textAlignment = .center
+        return label
     }
     public func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         

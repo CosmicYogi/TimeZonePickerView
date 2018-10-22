@@ -33,6 +33,10 @@ class ViewController: UIViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Select TimeZone", style: .plain, target: self, action: #selector(changeTimeZone))
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Select TimeZone", style: .plain, target: self, action: #selector(presentTimeZonePicker))
+        
+        timeZonePickerView.setText(color: UIColor.red)
+//        timeZonePickerView.setText(font: UIFont(name: "HelveticaNeue", size: 30)!)
+        timeZonePickerView.setText(font: UIFont(name: "HelveticaNeue-UltraLightItalic", size: 30)!)
     }
     
     @objc func presentTimeZonePicker(){
