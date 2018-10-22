@@ -31,6 +31,15 @@ class ViewController: UIViewController {
         timeZonePickerView.delegate = self
         timeZonePickerView.isHidden = pickerHidden
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Select TimeZone", style: .plain, target: self, action: #selector(changeTimeZone))
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Select TimeZone", style: .plain, target: self, action: #selector(presentTimeZonePicker))
+    }
+    
+    @objc func presentTimeZonePicker(){
+        let vc = UITimeZonePickerViewController()
+        vc.delegate = self
+        navigationController?.pushViewController(vc, animated: true)
+//        present(vc, animated: true, completion: nil)
     }
 
     @objc func changeTimeZone(){
@@ -65,3 +74,13 @@ extension ViewController: UITimeZonePickerViewDelegate{
     
 }
 
+extension ViewController: TimeZonePickerViewControllerDelegate{
+    func timeZonePickerView(_ timeZonePickerViewController: UITimeZonePickerViewController, didSelectTimeZone timeZone: TimeZone) {
+        print("Timezone selected is", timeZone.identifier)
+        self.selectedTimeZone = timeZone
+        timeZoneLabel.text = timeZone.identifier
+        timeZoneAbbrebationLabel.text = timeZone.abbreviation()
+    }
+    
+    
+}

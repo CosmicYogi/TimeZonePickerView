@@ -8,23 +8,62 @@
 
 import UIKit
 
-class UITimeZonePickerViewController: UIViewController {
+public class UITimeZonePickerViewController: UIViewController {
 
-    override func viewDidLoad() {
+    var searchResultsTVC: SearchResultsTVC?
+    var searchController: UISearchController!
+    
+    var timeZoneIdentifiers = TimeZone.knownTimeZoneIdentifiers
+    
+    public var delegate: TimeZonePickerViewControllerDelegate?
+    
+    override public func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = .white
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "X", style: .plain, target: self, action: #selector(onLeftBarButtonDown))
+        searchResultsTVC = SearchResultsTVC()
+//        navigationItem.hidesSearchBarWhenScrolling = true
+        createSearchBar()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    public override func viewDidAppear(_ animated: Bool) {
+        self.searchController.isActive = true
     }
-    */
+    @objc func onLeftBarButtonDown(){
+        dismiss(animated: true, completion: nil)
+    }
+    /**
+     Creates and set up search bar.
+     */
+    func createSearchBar(){
+        searchController = UISearchController(searchResultsController: searchResultsTVC)
+        searchController.searchBar.delegate = searchResultsTVC
+        searchController.searchResultsUpdater = searchResultsTVC
+        searchController.obscuresBackgroundDuringPresentation = true
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
+        searchResultsTVC?.delegate = self
+    }
+    
+    override public func viewDidDisappear(_ animated: Bool) {
+        searchController.isActive = false
+    }
 
+}
+
+extension UITimeZonePickerViewController: SearchConnectionDelegate{
+    func selectedTimeZone(timeZone: TimeZone?) {
+        print("selected time zone in search vc is", timeZone)
+        
+        if let timeZone = timeZone{
+            delegate?.timeZonePickerView(self, didSelectTimeZone: timeZone)
+            navigationController?.popViewController(animated: true)
+        } else {
+            navigationController?.popViewController(animated: true)
+        }
+    }
+    
+    
 }
