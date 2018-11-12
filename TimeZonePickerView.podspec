@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "TimeZonePickerView"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "TimeZonePickerView makes it ease to present a picker view containing time zones from any where in the application."
 
   # This description is used to generate tags and improve search results.
@@ -65,7 +65,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "9.0"
+  s.platform     = :ios, "11.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
