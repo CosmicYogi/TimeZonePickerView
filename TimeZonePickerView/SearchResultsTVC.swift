@@ -10,6 +10,7 @@ import UIKit
 
 protocol SearchConnectionDelegate {
     func selectedTimeZone(timeZone: TimeZone?)
+
 }
 
 class SearchResultsTVC: UITableViewController {

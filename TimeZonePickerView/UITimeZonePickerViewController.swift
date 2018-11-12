@@ -101,9 +101,11 @@ extension UITimeZonePickerViewController: SearchConnectionDelegate{
         
         if let timeZone = timeZone{
             delegate?.timeZonePickerView(self, didSelectTimeZone: timeZone)
-            navigationController?.popViewController(animated: true)
+//            navigationController?.popViewController(animated: true)
+            dismiss(animated: true, completion: nil)
         } else {
-            navigationController?.popViewController(animated: true)
+//            navigationController?.popViewController(animated: true)
+            dismiss(animated: true, completion: nil)
         }
     }
     
